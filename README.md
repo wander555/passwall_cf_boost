@@ -14,5 +14,16 @@
 1. get the node id, type  `cat /etc/config/passwall`
 2. edit the *cf.sh*,replace *xxxx at line 23* of your node id 
 3. get the **CloudflareSpeedTest** from [CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest)
-4. `bash cf.sh` and wait...
-5. use `wget https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4 && rm -rf movie*` to test the true speed..
+```
+# update tar 
+opkg update
+opkg upgrade tar
+
+# get the CloudflareSpeedTest
+wget https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.2.5/CloudflareST_linux_amd64.tar.gz
+
+# unzip
+tar -xzvf CloudflareST_linux_amd64.tar.gz CloudflareST 
+```
+5. `bash cf.sh` and wait...
+6. use `wget https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4 && rm -rf movie*` to test the true speed..
