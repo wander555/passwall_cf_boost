@@ -27,3 +27,4 @@ tar -xzvf CloudflareST_linux_amd64.tar.gz CloudflareST
 ```
 5. `bash cf.sh` and wait...
 6. use `wget https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4 && rm -rf movie*` to test the true speed..
+7. add the task on your openwrt like `0 18 * * * bash /root/cf_start.sh > /dev/null`
