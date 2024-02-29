@@ -8,7 +8,7 @@ sleep 2s
 wget https://ipdb.api.030101.xyz/?type=proxy -O bestcf.txt
 
 # filter the ip
-./CloudflareST -url https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4 -dn 2 -sl 20 -f bestcf.txt -o result_jp.csv
+./CloudflareST -url https://cdn.cloudflare.steamstatic.com/steam/apps/256843155/movie_max.mp4 -dn 5 -sl 1 -f bestcf.txt -o result.csv
 
 sleep 2s
 
